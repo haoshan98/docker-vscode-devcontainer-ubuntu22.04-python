@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  promptflow:
+    container_name: promptflow-dev
+    hostname: promptflow
+    build: 
+      context: ./
+      dockerfile: ./dev.Dockerfile
+    ports:
+      - "8000" 
+    volumes:
+      - ./:/app
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/app:/app_data

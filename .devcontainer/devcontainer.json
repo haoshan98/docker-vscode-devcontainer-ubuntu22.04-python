@@ -1,0 +1,7 @@
+{
+    "name": "promptflow-service",
+    "workspaceFolder": "/app",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "promptflow",
+    "shutdownAction": "stopCompose"
+}
